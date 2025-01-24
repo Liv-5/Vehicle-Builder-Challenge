@@ -61,7 +61,7 @@ class Truck extends Vehicle implements AbleToTow {
   // XTODO: Implement the tow method from the AbleToTow interface
 
   tow(vehicle: Truck | Motorbike | Car): void {
-    this.weight <= this.towingCapacity
+    vehicle.weight <= this.towingCapacity
       ? console.log(`${vehicle.make} ${vehicle.model} is being towed`)
       : console.log(
           `${vehicle.make} ${vehicle.model} is too heavy to be towed`
