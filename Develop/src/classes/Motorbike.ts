@@ -52,10 +52,8 @@ class Motorbike extends Vehicle {
   // XTODO: Implement the wheelie method
   //x TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
 
-  wheelie(vehicle: Motorbike) {
-    console.log(
-      `Motorbike ${vehicle.make} ${vehicle.model} is doing a wheelie!`
-    );
+  wheelie() {
+    console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   }
 
   // XTODO: Override the printDetails method from the Vehicle class
