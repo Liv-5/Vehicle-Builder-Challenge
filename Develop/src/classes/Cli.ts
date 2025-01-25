@@ -74,7 +74,7 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log(answers);
+        // bl
         if (answers.vehicleType === "Car") {
           // create a car
           this.createCar();
@@ -126,7 +126,7 @@ class Cli {
       ])
       .then((answers) => {
         const car = new Car(
-          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+          //X TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -202,7 +202,7 @@ class Cli {
 
         // XTODO: push the truck to the vehicles array
         // XTODO: set the selectedVehicleVin to the vin of the truck
-        // TODO: perform actions on the truck
+        // XTODO: perform actions on the truck
         this.vehicles.push(truck);
         this.selectedVehicleVin = truck.vin;
         this.vehicleType = "Truck";
@@ -291,7 +291,7 @@ class Cli {
         );
         // XTODO: push the motorbike to the vehicles array
         // XTODO: set the selectedVehicleVin to the vin of the motorbike
-        // TODO: perform actions on the motorbike
+        // XTODO: perform actions on the motorbike
         this.vehicles.push(motorbike);
         this.selectedVehicleVin = motorbike.vin;
         this.performActions();
@@ -418,7 +418,7 @@ class Cli {
 
         // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
         else if (answers.action === "Tow") {
-          console.log(this.vehicleType);
+          // console.log(this.vehicleType);
           if (this.vehicles)
             // if (this.vehicleType === "Truck") {
             // find the selected vehicle and Tow it
